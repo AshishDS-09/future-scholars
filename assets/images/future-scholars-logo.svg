@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="title desc">
+  <title id="title">Future Scholars logo</title>
+  <desc id="desc">A blue and gold education emblem with an open book, globe, and student figure.</desc>
+  <rect width="420" height="420" fill="#f7fbff"/>
+  <g stroke="#d9e4ec" stroke-width="1.4" opacity=".9">
+    <path d="M0 52h420M0 104h420M0 156h420M0 208h420M0 260h420M0 312h420M0 364h420"/>
+    <path d="M52 0v420M104 0v420M156 0v420M208 0v420M260 0v420M312 0v420M364 0v420"/>
+  </g>
+  <g transform="translate(58 50)">
+    <circle cx="152" cy="104" r="77" fill="#b8bec5"/>
+    <path d="M152 27v154M75 104h154M98 54c26 18 81 18 108 0M98 154c26-18 81-18 108 0M152 27c-31 35-31 119 0 154M152 27c31 35 31 119 0 154" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M152 0v23M152 185v23M48 104H25M279 104h-23" stroke="#294f91" stroke-width="5" stroke-linecap="round"/>
+    <path d="m152 0-7 18h14L152 0ZM152 208l7-18h-14l7 18ZM25 104l18 7V97l-18 7ZM279 104l-18-7v14l18-7Z" fill="#294f91"/>
+    <path d="M87 147c41-13 81-13 121 0v43c-39-15-80-15-121 0v-43Z" fill="#c7b277"/>
+    <path d="M0 165c46-9 89-8 129 3 25 7 45 7 70 0 40-11 83-12 129-3v20c-47-8-90-7-129 4-25 7-45 7-70 0-39-11-82-12-129-4v-20Z" fill="#c7b277"/>
+    <path d="M0 188h328v12H0z" fill="#294f91"/>
+    <path d="M153 91a17 17 0 1 0 0-34 17 17 0 0 0 0 34Zm-58 4 37 10 21 40 21-40 37-10-39 51h-38L95 95Z" fill="#294f91" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M74 171c31-15 62-15 93 0M92 184c25-11 50-11 75 0M254 171c-31-15-62-15-93 0M236 184c-25-11-50-11-75 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="210" y="333" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" letter-spacing="1" fill="#294f91">FUTURE</text>
+  <text x="210" y="377" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="10" fill="#294f91">SCHOLARS</text>
+</svg>
