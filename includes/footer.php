@@ -1,7 +1,7 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a class="brand footer-brand" href="./" aria-label="Future Scholars home">
+                <a class="brand footer-brand" href="index.php" aria-label="Future Scholars home">
                     <img src="assets/images/future-scholars-logo.svg" width="48" height="48" loading="lazy" alt="Future Scholars logo">
                     <span>Future <strong>Scholars</strong></span>
                 </a>
@@ -9,16 +9,16 @@
             </div>
             <div>
                 <h2>Explore</h2>
-                <a href="about">About</a>
-                <a href="courses">Courses</a>
-                <a href="contact">Contact</a>
+                <a href="about.php">About</a>
+                <a href="courses.php">Courses</a>
+                <a href="contact.php">Contact</a>
             </div>
             <div>
                 <h2>Courses</h2>
-                <a href="courses#python-programming">Python Programming</a>
-                <a href="courses#web-development">Web Development</a>
-                <a href="courses#artificial-intelligence">Artificial Intelligence</a>
-                <a href="courses#app-development">App Development</a>
+                <a href="courses.php#python-programming">Python Programming</a>
+                <a href="courses.php#web-development">Web Development</a>
+                <a href="courses.php#artificial-intelligence">Artificial Intelligence</a>
+                <a href="courses.php#app-development">App Development</a>
             </div>
             <div>
                 <h2>Contact</h2>

@@ -13,6 +13,20 @@ $formErrors = $_SESSION['form_errors'] ?? [];
 $formOld = $_SESSION['form_old'] ?? [];
 $formSuccess = $_SESSION['form_success'] ?? '';
 unset($_SESSION['form_errors'], $_SESSION['form_old'], $_SESSION['form_success']);
+
+$courseLabels = [
+    'scratch-programming' => 'Scratch Programming',
+    'python-programming' => 'Python Programming',
+    'web-development' => 'Web Development (HTML, CSS & JavaScript)',
+    'app-development' => 'App Development Fundamentals',
+    'artificial-intelligence' => 'Introduction to Artificial Intelligence & Machine Learning',
+    'generative-ai' => 'Generative AI',
+];
+$requestedCourse = is_string($_GET['course'] ?? null) ? trim((string) $_GET['course']) : '';
+$requestedCourseLabel = $courseLabels[$requestedCourse] ?? '';
+if ($requestedCourseLabel && empty($formOld['message'])) {
+    $formOld['message'] = 'I am interested in ' . $requestedCourseLabel . '. Please share details.';
+}
 ?>
 
 <main id="main-content">
@@ -57,6 +71,10 @@ unset($_SESSION['form_errors'], $_SESSION['form_old'], $_SESSION['form_success']
 
                 <label for="phone">Phone</label>
                 <input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="20" value="<?php echo htmlspecialchars($formOld['phone'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+
+                <?php if ($requestedCourseLabel) : ?>
+                    <div class="form-alert success" role="status">Course selected: <?php echo htmlspecialchars($requestedCourseLabel, ENT_QUOTES, 'UTF-8'); ?></div>
+                <?php endif; ?>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required maxlength="1000"><?php echo htmlspecialchars($formOld['message'] ?? '', ENT_QUOTES, 'UTF-8'); ?></textarea>

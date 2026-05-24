@@ -5,8 +5,8 @@
             <h1>Build coding confidence before the future arrives.</h1>
             <p>Future Scholars helps young learners master Python, web development, AI, and app thinking through guided projects and mentor-led practice.</p>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="courses">Explore courses</a>
-                <!-- <a class="btn btn-secondary" href="contact">Book counselling</a> -->
+                <a class="btn btn-primary" href="courses.php">Explore courses</a>
+                <a class="btn btn-secondary" href="contact.php">Book counselling</a>
             </div>
         </div>
         <div class="hero-visual reveal" aria-label="Future Scholars learning dashboard preview">

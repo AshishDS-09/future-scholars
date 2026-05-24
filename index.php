@@ -9,25 +9,25 @@ $courses = [
         'title' => 'Python Programming',
         'description' => 'Build logic, solve problems, and create useful programs with beginner-friendly Python lessons.',
         'icon' => 'python',
-        'url' => 'courses#python-programming',
+        'url' => 'courses.php#python-programming',
     ],
     [
         'title' => 'Web Development',
         'description' => 'Learn HTML, CSS, and JavaScript by making responsive websites and interactive projects.',
         'icon' => 'web',
-        'url' => 'courses#web-development',
+        'url' => 'courses.php#web-development',
     ],
     [
         'title' => 'Artificial Intelligence (AI)',
         'description' => 'Explore smart tools, prompts, automation, and ethical AI through age-ready activities.',
         'icon' => 'ai',
-        'url' => 'courses#artificial-intelligence',
+        'url' => 'courses.php#artificial-intelligence',
     ],
     [
         'title' => 'App Development',
         'description' => 'Design app screens, understand user flows, and turn ideas into practical mobile concepts.',
         'icon' => 'app',
-        'url' => 'courses#app-development',
+        'url' => 'courses.php#app-development',
     ],
 ];
 
@@ -42,7 +42,7 @@ include __DIR__ . '/components/hero-section.php';
                 <span class="eyebrow">Built for curious students</span>
                 <h2>Modern technology learning for students.</h2>
                 <p>Future Scholars blends guided teaching, creative projects, and strong fundamentals so young learners understand technology instead of only using it.</p>
-                <a class="text-link" href="about">Learn about our method</a>
+                <a class="text-link" href="about.php">Learn about SBT Ed Tech</a>
             </div>
             <div class="stat-panel reveal" aria-label="Future Scholars learning highlights">
                 <div>
@@ -110,7 +110,7 @@ include __DIR__ . '/components/hero-section.php';
                 <span class="eyebrow">Start strong</span>
                 <h2>Give your child a confident start in coding and AI.</h2>
             </div>
-            <!-- <a class="btn btn-light" href="contact">Book a free counselling call</a> -->
+            <a class="btn btn-light" href="contact.php">Book a free counselling call</a>
         </div>
     </section>
 </main>

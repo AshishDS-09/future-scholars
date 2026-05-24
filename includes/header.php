@@ -32,9 +32,22 @@ $activePage = $activePage ?? '';
     <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:image" content="assets/images/future-scholars-logo.svg">
-    <meta name="theme-color" content="#123f7a">
+    <meta name="theme-color" content="#123f7a" data-theme-color>
+    <script>
+    (function () {
+        try {
+            var savedTheme = localStorage.getItem('futureScholarsTheme');
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        } catch (error) {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    })();
+    </script>
     <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/enhancements.css">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",

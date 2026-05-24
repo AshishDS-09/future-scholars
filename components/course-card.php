@@ -19,5 +19,15 @@ $courseId = $course['id'] ?? strtolower(str_replace([' ', '(', ')'], ['-', '', '
     <div class="course-icon"><?php echo future_scholars_course_icon((string) ($course['icon'] ?? 'web')); ?></div>
     <h3><?php echo htmlspecialchars($course['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?></h3>
     <p><?php echo htmlspecialchars($course['description'] ?? '', ENT_QUOTES, 'UTF-8'); ?></p>
-    <a class="card-link" href="<?php echo htmlspecialchars($course['url'] ?? 'contact', ENT_QUOTES, 'UTF-8'); ?>">View course</a>
+    <?php if (!empty($course['items']) && is_array($course['items'])) : ?>
+        <?php if (!empty($course['itemsTitle'])) : ?>
+            <strong class="course-list-title"><?php echo htmlspecialchars((string) $course['itemsTitle'], ENT_QUOTES, 'UTF-8'); ?></strong>
+        <?php endif; ?>
+        <ul class="course-list">
+            <?php foreach ($course['items'] as $item) : ?>
+                <li><?php echo htmlspecialchars((string) $item, ENT_QUOTES, 'UTF-8'); ?></li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endif; ?>
+    <a class="card-link" href="<?php echo htmlspecialchars($course['url'] ?? 'contact.php', ENT_QUOTES, 'UTF-8'); ?>">Enquire now</a>
 </article>

@@ -10,7 +10,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: ../contact');
+    header('Location: ../contact.php');
     exit;
 }
 
@@ -22,7 +22,7 @@ function clean_input(string $value): string
 $token = $_POST['csrf_token'] ?? '';
 if (!is_string($token) || empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $token)) {
     $_SESSION['form_errors'] = ['csrf' => 'Your session expired. Please refresh the page and try again.'];
-    header('Location: ../contact');
+    header('Location: ../contact.php');
     exit;
 }
 
@@ -58,7 +58,7 @@ if ($message === '' || mb_strlen($message) < 10 || mb_strlen($message) > 1000) {
 
 if ($errors) {
     $_SESSION['form_errors'] = $errors;
-    header('Location: ../contact');
+    header('Location: ../contact.php');
     exit;
 }
 
@@ -80,5 +80,5 @@ $_SESSION['form_success'] = $sent
     ? 'Thank you. Your enquiry has been sent successfully.'
     : 'Thank you. Your enquiry has been received, but email delivery may need hosting mail setup.';
 
-header('Location: ../contact');
+header('Location: ../contact.php');
 exit;

@@ -1,14 +1,14 @@
 <?php
 $navItems = [
-    'home' => ['label' => 'Home', 'url' => './'],
-    'about' => ['label' => 'About', 'url' => 'about'],
-    'courses' => ['label' => 'Courses', 'url' => 'courses'],
-    'contact' => ['label' => 'Contact', 'url' => 'contact'],
+    'home' => ['label' => 'Home', 'url' => 'index.php'],
+    'about' => ['label' => 'About', 'url' => 'about.php'],
+    'courses' => ['label' => 'Courses', 'url' => 'courses.php'],
+    'contact' => ['label' => 'Contact', 'url' => 'contact.php'],
 ];
 ?>
 <header class="site-header" data-header>
     <nav class="container navbar" aria-label="Primary navigation">
-        <a class="brand" href="./" aria-label="Future Scholars home">
+        <a class="brand" href="index.php" aria-label="Future Scholars home">
             <img src="assets/images/future-scholars-logo.svg" width="54" height="54" alt="Future Scholars logo">
             <span>Future <strong>Scholars</strong></span>
         </a>
@@ -17,11 +17,13 @@ $navItems = [
         </button>
         <div class="nav-menu" data-nav-menu>
             <?php foreach ($navItems as $key => $item) : ?>
-                <a class="<?php echo $activePage === $key ? 'active' : ''; ?>" href="<?php echo htmlspecialchars($item['url'], ENT_QUOTES, 'UTF-8'); ?>">
+                <a class="<?php echo $activePage === $key ? 'active' : ''; ?>" href="<?php echo htmlspecialchars($item['url'], ENT_QUOTES, 'UTF-8'); ?>"<?php echo $activePage === $key ? ' aria-current="page"' : ''; ?>>
                     <?php echo htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8'); ?>
                 </a>
             <?php endforeach; ?>
-            <!-- <a class="btn btn-small" href="contact">Free counselling</a> -->
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to night mode" aria-pressed="false">
+                <span class="theme-toggle-icon" aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 </header>
