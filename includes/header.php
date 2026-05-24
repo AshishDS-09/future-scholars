@@ -9,13 +9,13 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$siteName = 'Future Scholars';
+$siteName = 'SBT Ed Tech';
 $baseUrl = '';
 $canonicalPath = $pagePath ?? '';
 $canonicalUrl = rtrim($baseUrl, '/') . '/' . ltrim($canonicalPath, '/');
 $canonicalUrl = $canonicalUrl === '/' ? '/' : $canonicalUrl;
-$pageTitle = $pageTitle ?? 'Future Scholars';
-$pageDescription = $pageDescription ?? 'Future Scholars offers premium technology education for students.';
+$pageTitle = $pageTitle ?? 'SBT Ed Tech';
+$pageDescription = $pageDescription ?? 'SBT Ed Tech offers premium technology education for students.';
 $activePage = $activePage ?? '';
 ?>
 <!doctype html>
@@ -31,7 +31,7 @@ $activePage = $activePage ?? '';
     <meta property="og:site_name" content="<?php echo htmlspecialchars($siteName, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:image" content="assets/images/future-scholars-logo.svg">
+    <meta property="og:image" content="assets/images/sbt-ed-tech-logo.png">
     <meta name="theme-color" content="#123f7a" data-theme-color>
     <script>
     (function () {
@@ -52,10 +52,10 @@ $activePage = $activePage ?? '';
     {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
-        "name": "Future Scholars",
+        "name": "SBT Ed Tech",
         "description": "Premium coding, AI, web development, and app development courses for students.",
         "url": "",
-        "logo": "assets/images/future-scholars-logo.svg",
+        "logo": "assets/images/sbt-ed-tech-logo.png",
         "sameAs": []
     }
     </script>

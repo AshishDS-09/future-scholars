@@ -1,9 +1,9 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a class="brand footer-brand" href="index.php" aria-label="Future Scholars home">
-                    <img src="assets/images/future-scholars-logo.svg" width="48" height="48" loading="lazy" alt="Future Scholars logo">
-                    <span>Future <strong>Scholars</strong></span>
+                <a class="brand footer-brand" href="index.php" aria-label="SBT Ed Tech home">
+                    <img class="brand-logo" src="assets/images/sbt-ed-tech-logo.png" width="72" height="52" loading="lazy" alt="SBT Ed Tech logo">
+                    <span>SBT <strong>Ed Tech</strong></span>
                 </a>
                 <p>Premium coding and AI education for students.</p>
             </div>

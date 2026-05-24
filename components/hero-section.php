@@ -11,7 +11,7 @@
         </div>
         <div class="hero-visual reveal" aria-label="Future Scholars learning dashboard preview">
             <div class="orbit-card">
-                <img src="assets/images/future-scholars-logo.svg" width="190" height="190" alt="Future Scholars emblem">
+                <img class="hero-logo" src="assets/images/sbt-ed-tech-logo.png" width="240" height="160" alt="SBT Ed Tech emblem">
                 <div class="lesson-chip chip-one">Python</div>
                 <div class="lesson-chip chip-two">AI</div>
                 <div class="lesson-chip chip-three">Web</div>
