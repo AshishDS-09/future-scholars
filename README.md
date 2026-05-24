@@ -8,7 +8,7 @@ Production-ready PHP 8+ website for an EdTech platform serving students.
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- Apache `.htaccess`
+- Apache / PHP hosting
 
 ## Pages
 
@@ -36,4 +36,4 @@ $to = 'hello@futurescholars.in';
 
 ## Hosting
 
-Upload the `future-scholars` folder to any PHP 8+ Apache shared hosting server. Clean URLs, HTTPS redirect, compression, caching, and security headers are handled by `.htaccess`.
+Upload the `future-scholars` folder to any PHP 8+ Apache shared hosting server. Navigation uses explicit `.php` page links so it works reliably on hosts where Apache rewrite modules are disabled.
